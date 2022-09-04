@@ -1,0 +1,7 @@
+project: rosc
+target: udp-decode
+
+cmds:
+  - cmd: /udp_decode
+  - cmd: /udp_decode_no_inst @@
+    libfuzzer: false
