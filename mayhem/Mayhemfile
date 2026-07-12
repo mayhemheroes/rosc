@@ -1,0 +1,9 @@
+project: rosc
+
+# Target name (unique within the project) — kept from the original integration.
+target: udp-decode
+
+cmds:
+  # libFuzzer binary; Mayhem feeds inputs on stdin (no @@ = stdin input).
+  - cmd: /mayhem/udp_decode
+    libfuzzer: true
